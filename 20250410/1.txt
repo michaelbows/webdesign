@@ -1,0 +1,43 @@
+Consulta
+
+1. Que es programacion?
+2. Que es una variable en computacion
+3. Tipos de variables en computacion
+4. Estructuras en computacion (condicionales, ciclos, repeticiones)
+5. Que es Python
+6. Que es JavaScript
+7. Que es POO
+
+30 minutos maximo
+
+
+Variable: espacio en memoria, la cual almacena un dato
+Tipos de variables
+Numericas
+- integer (numero enteros)
+- Single
+- Double (tipo numeros reales)
+- Long
+Booleanas (son variables que tomana 2 valores true (verdadero) y false (falso)
+Tipo cadena (es decir son variables tipo texto)
+string
+Colecciones
+Listas
+Matrices
+Conjuntos
+Mutables
+NO mutables (constantes)
+Locales (funcionan para un programa especifico
+Globales (funcionan para varios programas
+
+
+
+
+
+
+
+
+
+
+
+

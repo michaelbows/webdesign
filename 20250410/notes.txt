@@ -1,0 +1,27 @@
+Enrutamiento o path
+
+( enlace en el archivo index.html )
+<a href="archivo.html"> enlace </a>
+
+ENLACES DE ENTRADA A SUBCARPETAS
+(imagen en la subcarpeta *images*)
+<img src="images/name.jpg" alt="imagen a mostrar">
+
+(enlace desde index.html a página en subcarpeta *dos*)
+<a href="dos/blue.html"> enlace </a>
+
+<a href="tres/cuatro/yellow.html"> enlace </a>
+
+
+ENLACES SALIENDO DE SUBCARPETAS   ../
+dos/blue.html		images/bluecircle.jpg
+
+<img src="../images/bluecircle.jpg" alt="msg">
+
+<a href="../index.html"> a red page </a>
+
+
+
+
+
+
