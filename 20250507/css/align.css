@@ -1,0 +1,45 @@
+main {  
+    background: violet; padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section { 
+    display: flex;
+    background-color: purple;
+    height: 300px;
+    justify-content: space-between;
+}
+article {
+    width: 100px;
+    height: 100px;
+    background: orange;
+}
+section, article {
+    border: solid white 3px;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.mitad {width: 45%;}
+.todo { width: 100%;}
+
+.peque { height: 50px; font-size: 1rem;}
+.grande {height: 200px;  font-size: 4rem;}
+.medium { height: 120px; font-size: 1.5rem;}
+.alto { height: 150px;  font-size: 2rem;}
+
+/* flex-start es el valor por defecto para aliign-items*/
+#s_arriba { align-items: flex-start;} 
+#s_abajo { align-items: flex-end; }
+#s_centro { align-items: center; }
+#estirado { align-items: stretch; }
+#estirado article { height: unset;}
+#s_baseline { 
+    align-items: baseline; }
+#s_baseline article { 
+    width: 200px;
+    align-content: center;
+    text-align: center;
+}
