@@ -1,0 +1,41 @@
+main {
+    background: violet;
+    padding: 1rem;
+}
+section, article {
+    border: solid white;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+section {
+    background: purple;
+    display: flex;
+    height: 300px; /* 18.75rem */
+}
+article {
+    background: orange;
+    width: 100px;
+    text-align: center;
+}
+
+.peque {height: 80px;}
+.grande {height: 200px;}
+.mediano { height: 150px;}
+.grandote {height: 250px;}
+
+#s_start { align-items: flex-start; }
+#s_end { align-items: flex-end; }
+#s_center { align-items: center; }
+#s_stretch { align-items: stretch;}
+#s_baseline { align-items: baseline; }
+
+#a_p { font-size: 1rem; }
+#a_m { font-size: 2rem; }
+#a_g { font-size: 3rem; }
+#a_t { font-size: 4rem; }
+
+/* selector compuesta */
+#s_baseline article { 
+    align-content: center;
+    width: 270px;
+}

@@ -1,0 +1,22 @@
+main{
+    background: violet;
+    padding: 1rem;
+}
+section, article {
+    border: solid gray;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+section {
+    background: purple;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+article {
+    background: orange;
+    width: 46%;
+    /* flex-grow: 1; */
+    height: 100px;
+}
+#todo {width: 100%;}
