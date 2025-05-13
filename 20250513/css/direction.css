@@ -1,0 +1,24 @@
+* {box-sizing: border-box; margin: 0; padding: 0;}
+main {
+    background: violet; 
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+section, article { 
+    margin: 1rem;     border: solid 3px;
+    display:flex;    border-radius: 1rem;
+}
+section {
+    background: purple;     width: 550px;   flex-wrap: wrap;
+}
+article {
+    background: orange;
+    width: 100px;    height: 100px;
+    padding: 1rem;    font-size: 3rem;
+}
+
+#s_row { flex-direction: row; }
+#s_rowrev { flex-direction: row-reverse; }
+#s_col { flex-direction: column; height: 450px;}
+#s_colrev { flex-direction: column-reverse;  height: 450px;}
