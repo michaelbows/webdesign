@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main { background: violet; padding: 1rem;}
+
+section, article {
+    display: flex;
+    border: solid 3px black;
+    border-radius: 1rem;
+}
+section {
+    background: purple;
+}
+article {
+    background: orange;
+    flex-grow: 1;
+    height: 100px;
+    font-size: 3rem;
+    color: white;
+    margin: 1rem;
+}
+.order6 { order: 2;}
+.order1menos { order: -1;}
