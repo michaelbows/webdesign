@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box; padding: 0; margin: 0;
+}
+section {
+    display: grid;
+    margin: 2rem 0;
+    border: solid gray;    
+}
+#s_two {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#s_three {
+    grid-template-columns: repeat(4, 200px);
+                        /* 200px 200px 200px 200px*/
+}
+article {
+    border: solid darkred;
+    border-radius: 1rem;
+    height: 100px;     width: 100%;
+    font-size: 3rem;
+}
+#s_four {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+#a_uno { 
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+#a_dos { 
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+#a_tres { 
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+#a_cuatro { 
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+#a_cinco { 
+    grid-column: 2 / 3 ;
+    grid-row: 3 / 4;
+}
