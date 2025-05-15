@@ -1,0 +1,61 @@
+Soporte en Sistemas 
+
+Informática Básica
+Excel Avanzado
+Fund De Diseño Web 
+Fund de Programación 
+Aplicaciones Móviles
+
+
+Fund De Diseño Web 
+HTML - CSS - 	Javascript
+
+Hypertext Markup Language -> Lenguaje de Marcado de hipertexto
+
+Tags ó Etiquetas
+<html> </html>
+<head> </head>
+<body> </body>
+<title> </title>    
+<h1> </h1>   
+<h2> </h2>   
+<p>  </p>
+<a href=" "> palabra </a>
+<img src="imagen.jpg" alt="message"/>      
+
+
+IDE - Integrated Development enviroment      VScode
+
+
+<html>
+<head> 
+	<title> </title>   
+</head>
+<body>
+	<h1> TITULO</h1>   
+	<h2> Subtítulo</h2>   
+	<p>  Párrafo</p>
+	<a href="#"> palabra </a>
+	<p> <img src="foto.jpg" alt="beautiful pic" /> </p>	
+ </body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

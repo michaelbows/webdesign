@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {    
+    border: green dashed 2px;
+}
+header {
+    width: 1200px;
+    /* height: 100px; */
+    border: red solid 5px;
+}
+section { 
+    border: gray solid;
+    height: 100px;
+}
+#h_left {
+    width: 200px;
+    float: right;
+}
+aside {
+    border: solid green;
+    width: 300px;
+    float: left;
+    height: 300px;
+}
+main {
+    border: lightskyblue solid;
+    height: 300px;
+    font-size: 20px;
+}
+main section {
+    font-size: .8em;
+    width: 800px;
+    float: right;
+}
+#m_down {width: 70%;}
+footer {
+    height: 10vh;
+    border: purple solid;
+    /* text-align: center; */
+}
+footer p { 
+    border: dotted;
+    margin: 1rem 6rem;
+    text-align: center;
+}
+nav {
+    width: 100%;
+    border-radius: 1rem;
+    border: solid darkblue 1px;
+    padding: 1rem;
+}
+li {
+    display: inline;
+}
+nav a {
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    background: darkslateblue;
+    color: white;
+}

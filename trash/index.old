@@ -1,0 +1,28 @@
+<!-- la siguiente ínea declara que estoy usando html5 -->
+<!DOCTYPE html>
+<!-- uso html en idioma inglés -->
+<html lang="en">
+<head>
+    <!-- La siguiente línea utiliza el código de caracteres universal  -->
+    <meta charset="UTF-8">
+    <!-- trabajo responsive - fuerza el suo del ancho de pantalla del dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+        header { background: rgba(255, 0, 0, 0.266);}
+        main { background: rgba(0, 128, 0, 0.278);}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Work</h1>
+        <img src="images/miguel.jpg" alt="foto de miguel">
+    </header>
+    <main>
+        <p> <strong><a href="20250407/first.html">html básico</a> </strong> Creación de archivos de hipertexto con  notepad </p>
+    </main>
+    <footer>
+        &copy; Miguel Arcos - 2025
+    </footer>
+</body>
+</html>

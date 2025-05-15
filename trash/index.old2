@@ -1,0 +1,22 @@
+<!-- Declaramos que usamos html5 como código de hipertexto -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- código de caracteres universal -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAFOLIO</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio</h1>
+        <img src="images/foto.jpg" alt="foto">
+    </header>
+    <main>
+        <p> <strong><a href="20250407/first.html">html básico</a></strong> aprendiendo a trabajar con notepad y html</p>
+    </main>
+    <footer>
+        <p> &copy;Miguel Arcos - 2025 </p>
+    </footer>
+</body>
+</html>

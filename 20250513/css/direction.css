@@ -11,6 +11,7 @@ section, article {
 }
 section {
     background: purple;     width: 550px;   flex-wrap: wrap;
+    justify-content: flex-end;
 }
 article {
     background: orange;
@@ -22,3 +23,5 @@ article {
 #s_rowrev { flex-direction: row-reverse; }
 #s_col { flex-direction: column; height: 450px;}
 #s_colrev { flex-direction: column-reverse;  height: 450px;}
+
+.primero { order: -1; }

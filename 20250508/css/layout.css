@@ -15,8 +15,9 @@ section {
 }
 article {
     background: orange;
-    width: 46%;
-    /* flex-grow: 1; */
+    /* width: 46%; */
+    flex-grow: 1;
     height: 100px;
 }
-#todo {width: 100%;}
+#a_cinco {width: 100%;}
+#a_five {flex-grow: 2;}

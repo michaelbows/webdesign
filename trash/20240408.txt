@@ -1,0 +1,12 @@
+<html>
+<head> 
+	<title> PORTFOLIO </title>   
+</head>
+<body>
+	<h1> TITULO</h1>   
+	<h2> Subtítulo</h2>   
+	<p>  Párrafo</p>
+	<a href="#"> palabra </a>
+	<p> <img src="foto.jpg" alt="beautiful pic" /> </p>	
+ </body>
+ </html>

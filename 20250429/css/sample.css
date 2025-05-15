@@ -1,0 +1,17 @@
+body {
+    border: red 5px dashed;
+    padding: 1rem;
+}
+header {
+    border: blue solid 5px;
+    padding: 1rem;
+}
+main {
+    border: green dotted 8px;
+    padding: 1rem;
+    margin: 1rem;
+}
+footer {
+    background: gray;
+    color: white;
+}

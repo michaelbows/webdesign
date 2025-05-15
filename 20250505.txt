@@ -1,0 +1,51 @@
+1) Descargar Git	https://git-scm.com/downloads
+2) Tener una cuenta de correo activa
+3) Crear una cuenta en github.com		  		 			2o25webdev					
+4) Crear un repositorio (webdesign) *público
+5) Instalar git en el compu
+
+6) En VScode abra la terminal y ejecute
+	a) 	git init			(se inicia config de repositorio)
+	b) 	git branch -M main		(cambia de master a main)
+	c )	git remote add origin https://github.com/nickname/webdesign.git
+	d)	git add file.ext		(inicia seguimiento de cambios)
+	e)	git commit -m "first commit"	(generación depaquete para subir a repo remoto)
+	f) 	git push -u origin main	(enviar archivos a repo remoto)
+
+git status
+
+
+
+git config user.name
+git config user.email 
+
+git config --global user.name "TuNombre"
+git config --global user.email "tuemail@example.com"
+git config --global remote.origin.url "https://github.com/michaelbows/webdesign.git"
+
+cd 20250407
+git add second.html
+
+
+ - - - - -  - - - - -  - - - - -  - - - - -  - - - - -  - - - - -  - - - - -  - - - - -  - - - - - 
+Configuración de sitio web para repositorio
+
+1) Ir a github y entrar al repositorio
+2) Ir a la configuración del repositorio (botón settings)
+3) En elpanel izquierdo click en la opción *pages*
+	Build and deployment	Deploy from a branch
+	Branch			main	-> click en save
+	No se desespere (aguante unos 60 seg y actualice la página actual)
+	Ahora tendrá un enlace  a la página de su repositorio
+
+
+
+
+
+
+
+
+
+
+
+

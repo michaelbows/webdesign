@@ -1,0 +1,35 @@
+/* 
+    selector {
+        propiedad1: valor;
+        propiedad2: valor;
+    }
+*/
+
+body { background: beige; }
+
+header {
+    border: 4px dashed red;
+    background: lightskyblue;
+}
+main {
+    border: 2px solid blue;
+    background-color: antiquewhite;
+}
+footer {
+    border: 3px dotted orangered;
+    background: lightpink;
+}
+
+h1 {color: darkred;}
+p {color: red;}
+
+/* Estilo para una clase ES ÚNICO */
+#ensayo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* clase -> para varios elementos */
+.shakira {
+    color: darkblue;
+}

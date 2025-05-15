@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    border: red dashed 5px;
+    padding: 1rem; /* 1rem = 16px */
+}
+
+header {
+    border: solid blue 1px;
+    padding: 1rem;
+}
+
+nav {
+    border: 1px darkblue solid;
+    border-radius: 1rem;
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline; 
+    margin: 0 2rem;
+}
+nav a {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background: lightgoldenrodyellow;
+}
+
+
+main {
+    border: dotted 5px green;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+footer {
+    background: darkgray;
+    color: white;
+    border: 1px orange solid;
+    
+}
+
+p   {text-align: justify;}
+
+footer p {
+    text-align: center;
+}

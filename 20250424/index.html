@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <style>
+        main { background: #d3d3d3; padding: 1rem;}
+        label { display: block; margin: 1rem 0;}
+        header, main {width: 500px; margin: 0 auto;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1> FORMULARIO </h1>
+    </header>
+    <main>
+        <!-- AQUI COMIENZA EL FORMULARIO -->
+        <form action="">
+
+            <label for="inName">* NOMBRE: 
+                <input type="text" name="inName" id="inName" required placeholder="John">
+            </label>
+
+            <label for="inLastname">* APELLIDO: 
+                <input type="text" name="inLastname" id="inLastname" required placeholder="Doe">
+            </label>
+
+            <label for="inAddress" > DIRECCIÓN: 
+                <input type="text" name="inAddress" id="inAddress" placeholder="Calle 4 #2-16">
+            </label>
+
+            <label for="inPhone"> CELULAR:
+                <input type="text" name="inPhone" id="inPhone" placeholder="+57 333 111 4444">
+            </label>
+
+            <label for="inEmail">EMAIL 
+                <input type="email" name="inEmail" id="inEmail"  placeholder="JohnDoe@mail.com " >
+            </label> 
+
+            <label for="inGender">SEXO: 
+                <input type="radio" name="inGender" id="inGender" value="Hombre"> Hombre
+                <input type="radio" name="inGender" id="inGender" value="Mujer"> Mujer
+                <input type="radio" name="inGender" id="inGender" value="NS"> No Sabe
+            </label>
+
+            <label for="inEntertainment">PASATIEMPOS:
+                <input type="checkbox" name="inEntertainment" id="inEntertainment" value="instrumento"> Instrumento Musical
+                <input type="checkbox" name="inEntertainment" id="inEntertainment" value="baile"> Baile
+                <input type="checkbox" name="inEntertainment" id="inEntertainment" value="sing"> Cantar
+                <input type="checkbox" name="inEntertainment" id="inEntertainment" value="cooking"> cocina
+                <input type="checkbox" name="inEntertainment" id="inEntertainment" value="sport"> Deporte
+                <input type="checkbox" name="inEntertainment" id="inEntertainment" value="read"> Lectura
+            </label>
+
+            <label for="pwd">PASSWORD : 
+                <input type="password" name="pwd" id="pwd">
+            </label>
+
+            <label for="birthday">Fec Nac. :
+                <input type="date" name="birthday" id="birthday">
+            </label>
+
+            <label for="comment"> Comentarios: 
+                <textarea name="" id=""></textarea>
+            </label>
+
+            <input type="button" value="ENVIAR">
+        </form>        
+        <!-- AQUI TERMINA -->
+    </main>
+</body>
+</html>

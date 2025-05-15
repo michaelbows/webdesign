@@ -1,0 +1,20 @@
+CSS - Cascade Style Sheets (Hojas de estilo en cascada)
+
+Esqueleto con HTML, el estilo lo aplicamos con CSS
+
+BOX MODEL - Modelo de caja
+
+Modos de estilo:
+INLINE - cuando lo colocamos directament en la etiqueta
+    <p style="color: blue;">blablablbalbalbalblablablablablab </p>
+
+INTERNAL -cuando agregamos reglas de estilo en el head del documento
+<head>
+    <style>
+        body {font-family: Arial;}
+     </style>
+</head>
+
+EXTERNAL 
+
+    <link rel="stylesheet" href="css/style.css">

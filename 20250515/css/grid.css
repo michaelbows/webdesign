@@ -1,0 +1,33 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+main {
+    display: grid;     background: violet;   padding: 1rem;
+}
+section {
+    display: grid; /* crea filas */
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    background: purple;
+}
+article {
+    background: orange;
+    width: 100%;
+    height: 100%;
+    border: solid;
+    font-size: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+#art_a { grid-column: 1 / -1;}  /* 1 / 6 */
+#art_b {
+    grid-column-start: -6;
+    grid-column-end: 6;
+    grid-row: 5;
+}
+#art_c {grid-column: 5; grid-row: -5/-2;}
+#art_d {grid-column: 1 / 3; grid-row: 2 / 5;}
+/* Cómo se usaria gid area con art_d */
+
+/* #art_e {grid-column: -4 / -2; grid-row: -5 / -3;} */
+#art_e { grid-area: -5 / -4 / -3 / -2;}
+
+#art_f {grid-column: 3 / 5; grid-row: -3 / -2;}

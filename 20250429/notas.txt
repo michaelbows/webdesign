@@ -1,0 +1,7 @@
+BOX MODEL - MODELO CAJA
+
+<div id="container">    </div>
+<div id="wrapper">    </div>
+
+header
+main
