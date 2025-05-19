@@ -1,0 +1,43 @@
+* {box-sizing: border-box; margin: 0; padding: 0;}
+
+main { background: violet; padding: 1rem;}
+
+section { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 120px);
+    background-color: white; 
+    margin-bottom: 2rem;
+}
+
+article { border-radius: 1rem; margin: 1rem;}
+
+#uno {
+    background: rgba(255, 0, 0);
+    grid-area: 1 / 1 / 3 / 3;
+    z-index: 2;
+}
+#dos {
+    background: rgba(0, 0, 139);
+    grid-area: 2 / 2  / 4 / 4;   
+    z-index: 1; 
+}
+#tres {
+    background: green;
+    grid-area: 3 / -3 / 5 / -1;
+    z-index: 0;
+}
+
+#cuatro {
+    background: rgba(255, 255, 0, 0.6);
+    grid-area: 1 / 1 / -1 / -1;
+    margin: 3rem;
+    z-index: 4;
+}
+
+#hero {
+    grid-template-columns: ;
+    grid-template-rows: ;
+}
+
+
