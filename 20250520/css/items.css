@@ -1,0 +1,41 @@
+* {    box-sizing: border-box; margin: 0; padding: 0;}
+main {    background: violet;    padding: 2rem;}
+#hero {
+    display: grid;
+    grid-template-columns: 4rem  1fr 150px 150px 200px 100px 40px 4rem;
+    grid-template-rows: 2rem 1rem 100px 85px 140px 1rem 2rem;
+    border: solid 3px red;
+    background: white;
+}
+
+#hero img {  grid-area: 2 / 3 / -2 / -2;}
+
+#hero article { 
+    grid-area: 1 / 1 / -1 / -1; 
+    border: solid green 2px;
+    border-radius: 1rem;
+    margin: 1rem;
+    background: rgba(0, 0, 255, 0.1);
+}
+
+#hero h2 { grid-area: 3 / 2 / 4 / 4;  
+    background: darkred; z-index:2; text-align: center;
+    color: white; padding: 2rem; font-size: xx-large;
+    border-radius: 2rem; font-weight: 900;
+}
+
+#hero p { grid-area: 5 / 2 / 6 / 5; 
+    background: greenyellow; 
+    z-index:2; border-radius: 2rem; padding: 2rem; font-size: 1.3rem;
+}
+#hero a {
+    grid-area: 5 / -4 / 6 / -3;
+    text-decoration: none;
+    color: white;
+    background: darkblue;
+    border-radius: 1rem;
+    height: 45px;
+    padding: 1rem;
+    align-self: end;
+}
+#hero a:hover {background: yellow; color: blue;}
