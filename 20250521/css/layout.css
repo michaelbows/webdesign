@@ -1,0 +1,11 @@
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1rem;
+}
+header { background: rgba(255, 0, 0, 0.295); grid-column:1 / -1;}
+nav {background: rgba(255, 166, 0, 0.315); grid-column:1 / -1; grid-row: 2;}
+aside {background: rgba(0, 128, 0, 0.24); }
+main {background: rgba(172, 255, 47, 0.178);}
+footer {background: rgba(128, 0, 128, 0.226); grid-column:1 / -1;}
