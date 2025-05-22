@@ -1,0 +1,51 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { display: grid; 
+    grid-template-columns: repeat(6,1fr);}
+header {
+    grid-column: 1 / -1;
+    display: grid;  grid-template-rows: 110px;
+    grid-template-columns: 2fr 4fr;
+    background: rgba(123, 0, 255, 0.224);}
+header img { width: 100px; justify-self: center;}
+header h1 { align-self: center;}
+nav { 
+    grid-column: 1 / -1; /* el meú ocupará la segunda fila */
+    border: red dotted;}
+nav ul {
+     display: grid; list-style: none;
+     grid-template-columns: 1fr repeat(5, 150px) 1fr;    
+}
+nav a {
+    border: green solid;
+    padding: .5rem 1rem;
+    display: grid;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover { background: darkred; color: yellow; }
+main { grid-column: 1 / 5; border: solid blue; padding: 1rem;}
+aside {border: green solid; grid-column: -3 / -1;}
+footer {grid-column: 1 / -1; height: 80px; padding: 2rem;
+    background: lightgoldenrodyellow;
+}
+section { border: dotted orangered; gap: 1rem;}
+.primera {
+    display: grid; grid-template-columns: 1fr 1fr;
+}
+article { background-color: rgba(255, 127, 80, 0.292); 
+    border-radius: 1rem; margin: 1rem; display: grid;}
+.primera img {justify-self: center; height: 80%; align-self: center;}
+
+.img_left {
+    display: grid;     height:200px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
+}
+.img_left img {grid-row: 1 / -1; }
+
+.img_right {
+    display: grid;     height:200px;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 3fr;
+}
+.img_right img {grid-row: 1 / -1;  grid-column: -2 / -1;}
