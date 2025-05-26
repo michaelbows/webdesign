@@ -1,0 +1,33 @@
+/* MAQUETADO PARA MONITOR PC */
+main {
+    background: rgba(0, 0, 255, 0.269);
+    width: 1000px;
+    border: red 3px solid;
+    margin: 0 auto; /* centra el objeto en el contenedor */
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+/* MAQUETADO PARA TABLET */
+@media screen and (max-width: 800px) {
+    main { 
+        background: green; 
+        border: orange dotted;
+        font-size: 1.2rem;
+        color: white;
+        width: 650px;
+    }
+}  /* cierre de media querie */
+
+/* MAQUETADO PARA CELULAR  <= 450px */
+@media screen and (max-width: 450px) {
+    main {
+        background: yellow;
+        border: dashed darkblue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        width: unset;
+        margin: unset;
+        color: black;
+    }
+}

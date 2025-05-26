@@ -1,0 +1,26 @@
+RESPONSIVE WEB
+Sitios web responsivos
+                        VIEWPORT (area usable en el navegador)
+Celular     6"      < 450px
+Tablet      500 - 800px  8"-9"
+Monitor     14" - 24"
+TV          32"-52"
+
+MEDIA QUERIES
+
+@media screen and (  )         
+                    max-width: measure;
+                    min-width: measure;
+
+celular -> tablet -> monitor -> TV
+
+TV -> monitor -> tablet -> celular
+
+celular  <-  tablet -> monitor
+
+tipos de estilo ->  
+        inline -> como propiedad de una etiqueta (NO SE HACE)
+        internal -> se coloca una etiqueta style en el head de la ágina y se aplican reglas (NO SE HACE)
+        external -> dentro de una subcarpeta (css o styles) 
+
+
