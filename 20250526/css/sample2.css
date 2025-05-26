@@ -1,9 +1,8 @@
 header, main, footer, aside, nav {
-    border:  solid 3px; border-radius: 1rem;
-}
-header { height: 100px;  background: rgba(255, 0, 0, 0.26);}
-header nav {visibility: unset; background: unset; font-size: 2rem; border: unset;}
-nav { visibility: hidden; background: greenyellow;}
+    border:  solid 3px; border-radius: 1rem;}
+header { height: 100px;  background: rgba(255, 0, 0, 0.4); padding: 1rem;}
+header nav {visibility: unset; background: unset; font-size: 3rem; border: unset;}
+nav { visibility: hidden; background: greenyellow; border: 0;}
 main {height: 300px; background: rgba(0, 0, 255, 0.281);} 
 aside { background: lightgoldenrodyellow; height: 100px;}
 #izq {visibility: hidden; height: 0; border: unset;}
@@ -13,19 +12,21 @@ footer { background: violet; height: 200px;}
     body { display: grid;         grid-template-columns: 4fr 1fr;    }
     header, footer, nav { grid-column: 1 / -1;}
     header nav {visibility: hidden;}
-    nav {visibility: unset; grid-row: 2/3; height: 50px;}
+    nav {visibility: unset; grid-row: 2/3; height: 50px; border: solid;}
     main { grid-column: 1/2;  grid-row: 3/4;}
-    #der {visibility:unset; height: 50px; grid-column: 2 / 3; grid-row: 3/4;}
+    #der {visibility:unset; height: unset; grid-column: 2 / 3; grid-row: 3/4;}
 }
 
 @media screen and (min-width: 800px) {
     body {display:flex; flex-wrap: wrap;}
-    header, footer {width: 100%;}
+    header, footer {width: 100%; }
     header nav {visibility: unset;}
-    nav {width: 100%; visibility: hidden; height: 0;}
+    nav {width: 100%; visibility: hidden; height: 0; border: 0;}
     aside {flex-grow: 2;}
-    #izq {visibility:unset; height: unset;  border: solid; }
-    main {flex-grow: 5;}
+    #izq {visibility:unset; height: unset;  border: solid; order: 2;}
+    #der {order: 4;}
+    main {flex-grow: 5; order: 3;}
+    footer {order: 6;}
 }
 
 
