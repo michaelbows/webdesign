@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de la Foto del Día - NASA APOD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Explorando el Universo con la NASA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Foto del Día</a></li>
+                <li><a href="planetas.html">Los 8 Planetas</a></li>
+                <li><a href="historia-apod.html">Historia APOD</a></li>
+                <li><a href="luna.html">La Luna</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="historia-apod-section">
+            <h2>Historia de la Foto del Día</h2>
+            <p>Explora imágenes APOD de fechas anteriores. Selecciona una fecha para ver la maravilla del universo de ese día.</p>
+
+            <form id="apod-history-form">
+                <label for="apod-date">Selecciona una fecha:</label>
+                <input type="date" id="apod-date" name="apod-date" max="">
+                <button type="submit">Ver Foto</button>
+            </form>
+
+            <article id="apod-history-content">
+                <p>Selecciona una fecha para comenzar...</p>
+                </article>
+
+            <div id="history-error-message" class="hidden">
+                <p>No se pudo cargar la imagen para la fecha seleccionada. Asegúrate de que la fecha sea válida y anterior a hoy.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Explorando el Universo. Datos de la NASA.</p>
+    </footer>
+
+    <script src="js/historia.js"></script>
+</body>
+</html>

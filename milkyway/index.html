@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA APOD - La Foto del Día</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Explorando el Universo con la NASA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Foto del Día</a></li>
+                <li><a href="planetas.html">Los 8 Planetas</a></li>
+                <li><a href="historia-apod.html">Historia APOD</a></li>
+                <li><a href="luna.html">La Luna</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="apod-section">
+            <h2>Astronomía: La Foto del Día (APOD)</h2>
+            <p>Descubre cada día una nueva imagen o fotografía destacada de nuestro fascinante universo, explicada por un astrónomo.</p>
+
+            <article id="apod-content">
+                <p>Cargando la imagen del día...</p>
+                </article>
+
+            <div id="error-message" class="hidden">
+                <p>Lo sentimos, no se pudo cargar la imagen del día. Inténtalo de nuevo más tarde o verifica tu conexión.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Explorando el Universo. Datos de la NASA.</p>
+    </footer>
+
+    <script src="js/apod.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Fundamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fundamentos del Desarrollo Web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="grid_flex_responsive.html">Grid, Flexbox & Responsive</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>CSS: Estilizando tu Contenido</h2>
+            <p>CSS (Cascading Style Sheets) es el lenguaje utilizado para describir la presentación de un documento escrito en HTML. Permite controlar el color, la fuente, el espaciado, el diseño, y mucho más, de tus páginas web.</p>
+
+            <section>
+                <h3>Conceptos Clave de CSS</h3>
+                <ul>
+                    <li><strong>Selectores:</strong> Se utilizan para "seleccionar" los elementos HTML a los que quieres aplicar estilo (por ejemplo, `p` para párrafos, `#id-elemento` para un ID específico, `.clase-elemento` para una clase).</li>
+                    <li><strong>Propiedades y Valores:</strong> Las reglas CSS se componen de una propiedad (lo que quieres estilizar, como `color` o `font-size`) y un valor (cómo quieres estilizarlo, como `blue` o `16px`).</li>
+                    <li><strong>Modelo de Caja:</strong> Cada elemento HTML se considera una caja. El modelo de caja describe cómo se distribuyen el contenido, el padding (relleno), el border (borde) y el margin (margen) alrededor de cada elemento.</li>
+                    <li><strong>Casacada y Especificidad:</strong> Determinan qué estilos se aplican cuando múltiples reglas CSS pueden afectar el mismo elemento.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Formas de Incluir CSS</h3>
+                <ol>
+                    <li><strong>Estilos en línea:</strong> Directamente en el atributo `style` de una etiqueta HTML (no recomendado para grandes proyectos).
+                        <pre><code>&lt;p style="color: blue;"&gt;Este es un párrafo azul.&lt;/p&gt;</code></pre>
+                    </li>
+                    <li><strong>Estilos internos:</strong> Dentro de la etiqueta `&lt;style&gt;` en el `&lt;head&gt;` del documento HTML (útil para estilos específicos de una sola página).
+                        <pre><code>
+&lt;head&gt;
+    &lt;style&gt;
+        h1 {
+            color: green;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+                        </code></pre>
+                    </li>
+                    <li><strong>Estilos externos (Recomendado):</strong> En un archivo CSS separado (como `styles.css`) enlazado desde el HTML. Esto permite reutilizar estilos en múltiples páginas y mantener el código más limpio.
+                        <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+                    </li>
+                </ol>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fundamentos del Desarrollo Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

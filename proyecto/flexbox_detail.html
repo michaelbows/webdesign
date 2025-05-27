@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fundamentos del Desarrollo Web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="grid_flex_responsive.html">Grid, Flexbox & Responsive</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Flexbox (Flexible Box Layout): Diseño Unidimensional</h2>
+            <p><strong>Flexbox</strong> es un módulo de diseño de CSS que proporciona una forma eficiente de distribuir y alinear elementos dentro de un contenedor, incluso cuando su tamaño es desconocido o dinámico. Es particularmente útil para la creación de componentes y para el diseño en una sola dimensión (fila o columna).</p>
+
+            <section>
+                <h3>Conceptos Clave de Flexbox</h3>
+                <ul>
+                    <li><strong>Contenedor Flex (Flex Container):</strong> Es el elemento padre al que le aplicas `display: flex;` o `display: inline-flex;`.</li>
+                    <li><strong>Ítems Flex (Flex Items):</strong> Son los hijos directos del contenedor flex.</li>
+                    <li><strong>Eje Principal (Main Axis):</strong> La dirección principal en la que los ítems flex se distribuyen. Por defecto, es horizontal (`row`).</li>
+                    <li><strong>Eje Cruzado (Cross Axis):</strong> La dirección perpendicular al eje principal. Por defecto, es vertical (`column`).</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Propiedades del Contenedor Flex</h3>
+                <ul>
+                    <li><code>display: flex;</code> o <code>display: inline-flex;</code>: Habilita el contexto flex.</li>
+                    <li><code>flex-direction: row | row-reverse | column | column-reverse;</code>: Define la dirección del eje principal.</li>
+                    <li><code>justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;</code>: Alinea los ítems a lo largo del eje principal.</li>
+                    <li><code>align-items: flex-start | flex-end | center | baseline | stretch;</code>: Alinea los ítems a lo largo del eje cruzado.</li>
+                    <li><code>flex-wrap: nowrap | wrap | wrap-reverse;</code>: Controla si los ítems deben ajustarse a una nueva línea.</li>
+                    <li><code>align-content: flex-start | flex-end | center | space-between | space-around | stretch;</code>: Alinea las líneas de ítems flex dentro del contenedor flex cuando hay varias líneas (solo si `flex-wrap` es `wrap`).</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Propiedades de los Ítems Flex</h3>
+                <ul>
+                    <li><code>flex-grow: &lt;number&gt;;</code>: Define la capacidad de un ítem para crecer si hay espacio extra.</li>
+                    <li><code>flex-shrink: &lt;number&gt;;</code>: Define la capacidad de un ítem para encogerse si no hay espacio suficiente.</li>
+                    <li><code>flex-basis: &lt;length&gt; | auto;</code>: Define el tamaño por defecto de un ítem antes de que se distribuya el espacio restante.</li>
+                    <li><code>flex: &lt;flex-grow&gt; &lt;flex-shrink&gt; &lt;flex-basis&gt;;</code>: Atajo para las tres propiedades anteriores.</li>
+                    <li><code>align-self: auto | flex-start | flex-end | center | baseline | stretch;</code>: Sobreescribe la propiedad `align-items` para un ítem individual.</li>
+                    <li><code>order: &lt;integer&gt;;</code>: Controla el orden visual de los ítems flex.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Ejemplo Práctico de Flexbox</h3>
+                <p>Contenedor con ítems centrados y espaciados:</p>
+                <div class="flex-example">
+                    <div class="flex-ex-item">Uno</div>
+                    <div class="flex-ex-item">Dos</div>
+                    <div class="flex-ex-item">Tres</div>
+                </div>
+                <pre><code>
+.flex-example {
+    display: flex;
+    justify-content: space-evenly; /* Espacio uniforme entre y alrededor */
+    align-items: center; /* Alinea verticalmente al centro */
+    height: 150px; /* Para visualizar align-items */
+    background-color: #f0f8ff;
+    border: 1px solid #cceeff;
+}
+.flex-ex-item {
+    background-color: #6a5acd; /* Púrpura oscuro */
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+                </code></pre>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fundamentos del Desarrollo Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

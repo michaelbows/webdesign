@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML: Estructura de la Web - Fundamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fundamentos del Desarrollo Web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="grid_flex_responsive.html">Grid, Flexbox & Responsive</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>HTML: La Estructura Fundamental de la Web</h2>
+            <p><strong>HTML</strong> (HyperText Markup Language) es el lenguaje de marcado estándar para crear páginas web. Es el esqueleto de tu sitio, definiendo la estructura y el contenido. Cada elemento HTML, o "etiqueta", tiene un propósito específico y organiza el texto, las imágenes, los enlaces y otros elementos para que el navegador los interprete correctamente.</p>
+
+            <section>
+                <h3>Estructura Básica de un Documento HTML</h3>
+                <p>Todo documento HTML comienza con una declaración de tipo de documento y se divide en dos secciones principales: el `&lt;head&gt;` y el `&lt;body&gt;`.</p>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code>: Declara el tipo de documento y la versión de HTML (HTML5).</li>
+                    <li><code>&lt;html lang="es"&gt;</code>: El elemento raíz de la página, indicando el idioma principal.</li>
+                    <li><code>&lt;head&gt;</code>: Contiene metadatos sobre la página (no visibles en el navegador), como el título, la codificación de caracteres, enlaces a hojas de estilo, etc.</li>
+                    <li><code>&lt;meta charset="UTF-8"&gt;</code>: Define la codificación de caracteres para que el texto se muestre correctamente.</li>
+                    <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>: Esencial para el diseño responsivo, controla el ancho del viewport y el zoom inicial.</li>
+                    <li><code>&lt;title&gt;</code>: El texto que aparece en la pestaña del navegador.</li>
+                    <li><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>: Enlaza tu hoja de estilos CSS externa.</li>
+                    <li><code>&lt;body&gt;</code>: Contiene todo el contenido visible de la página web.</li>
+                </ul>
+                <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título de mi Página&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Aquí va todo el contenido visible --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Etiquetas HTML Semánticas (HTML5)</h3>
+                <p>HTML5 introdujo etiquetas con significado semántico que describen la función del contenido, mejorando la accesibilidad y el SEO. Evita usar `&lt;div&gt;` para todo cuando haya una etiqueta más específica.</p>
+                <ul>
+                    <li><code>&lt;header&gt;</code>: Contenido introductorio o de navegación (ej. logo, título del sitio, barra de navegación).</li>
+                    <li><code>&lt;nav&gt;</code>: Un grupo de enlaces de navegación (menú principal).</li>
+                    <li><code>&lt;main&gt;</code>: El contenido principal y dominante de la página, único por documento.</li>
+                    <li><code>&lt;article&gt;</code>: Contenido independiente y autocontenido (ej. entrada de blog, artículo de noticias).</li>
+                    <li><code>&lt;section&gt;</code>: Un agrupamiento temático de contenido, a menudo con un título (ej. capítulos, introducciones).</li>
+                    <li><code>&lt;aside&gt;</code>: Contenido indirectamente relacionado con el contenido principal, como barras laterales o bloques de publicidad.</li>
+                    <li><code>&lt;footer&gt;</code>: Información sobre la sección contenedora o el documento (ej. derechos de autor, información de contacto).</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Elementos de Texto y Contenido</h3>
+                <p>Estas son algunas de las etiquetas más comunes para estructurar tu texto:</p>
+                <ul>
+                    <li><strong>Encabezados:</strong> <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> (del más importante al menos importante). Solo debe haber un `&lt;h1&gt;` por página.</li>
+                    <li><strong>Párrafos:</strong> <code>&lt;p&gt;</code> para bloques de texto.</li>
+                    <li><strong>Listas:</strong>
+                        <ul>
+                            <li><code>&lt;ul&gt;</code>: Lista desordenada (ítems con viñetas). Usa <code>&lt;li&gt;</code> para cada ítem.</li>
+                            <li><code>&lt;ol&gt;</code>: Lista ordenada (ítems numerados). Usa <code>&lt;li&gt;</code> para cada ítem.</li>
+                            <li><code>&lt;dl&gt;</code>: Lista de definición (para términos y sus descripciones). Usa <code>&lt;dt&gt;</code> para el término y <code>&lt;dd&gt;</code> para la descripción.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Énfasis y Resaltado:</strong>
+                        <ul>
+                            <li><code>&lt;strong&gt;</code>: Contenido de gran importancia (visualmente negrita por defecto).</li>
+                            <li><code>&lt;em&gt;</code>: Énfasis (visualmente cursiva por defecto).</li>
+                            <li><code>&lt;b&gt;</code>: Texto en negrita sin especial énfasis.</li>
+                            <li><code>&lt;i&gt;</code>: Texto en cursiva para un estado de ánimo o voz alternativa.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Enlaces:</strong> <code>&lt;a href="url"&gt;Texto del enlace&lt;/a&gt;</code> para crear hipervínculos. El atributo `href` es crucial. Puedes usar `target="_blank"` para abrir en una nueva pestaña.</li>
+                    <li><strong>Saltos de línea:</strong> <code>&lt;br&gt;</code> para un salto de línea (no de bloque).</li>
+                    <li><strong>Líneas horizontales:</strong> <code>&lt;hr&gt;</code> para un cambio temático en el contenido.</li>
+                </ul>
+                <pre><code>
+&lt;h2&gt;Mi Título Principal&lt;/h2&gt;
+&lt;p&gt;Este es un &lt;strong&gt;párrafo&lt;/strong&gt; con texto importante.&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Primer ítem&lt;/li&gt;
+    &lt;li&gt;Segundo ítem&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Visita &lt;a href="https://www.google.com" target="_blank"&gt;Google&lt;/a&gt; para más información.&lt;/p&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Trabajando con Imágenes</h3>
+                <p>Las imágenes son un componente visual clave de cualquier página web. La etiqueta `&lt;img&gt;` es fundamental.</p>
+                <ul>
+                    <li><code>&lt;img src="ruta/a/imagen.jpg" alt="Descripción de la imagen"&gt;</code>: La etiqueta para insertar imágenes.</li>
+                    <li><strong>`src` (source):</strong> La ruta al archivo de la imagen. Puede ser relativa o absoluta.</li>
+                    <li><strong>`alt` (alternative text):</strong> Texto descriptivo de la imagen. ¡Es crucial para la accesibilidad (lectores de pantalla) y el SEO!</li>
+                    <li><strong>`width` y `height`:</strong> Atributos opcionales para definir las dimensiones de la imagen en píxeles. Es mejor controlarlas con CSS para responsividad.</li>
+                </ul>
+                <p>Puedes usar la etiqueta `&lt;figure&gt;` y `&lt;figcaption&gt;` para imágenes con leyendas, dándoles un significado semántico más profundo.</p>
+                <pre><code>
+&lt;figure&gt;
+    &lt;img src="https://via.placeholder.com/300x200" alt="Ejemplo de una imagen placeholder"&gt;
+    &lt;figcaption&gt;Figura 1: Una imagen de ejemplo.&lt;/figcaption&gt;
+&lt;/figure&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Creación de Tablas HTML</h3>
+                <p>Las tablas se usan para mostrar datos tabulares (filas y columnas), no para el diseño de la página. Utilizan varias etiquetas:</p>
+                <ul>
+                    <li><code>&lt;table&gt;</code>: El contenedor principal de la tabla.</li>
+                    <li><code>&lt;thead&gt;</code>: Agrupa el contenido del encabezado de la tabla.</li>
+                    <li><code>&lt;tbody&gt;</code>: Agrupa el contenido del cuerpo de la tabla.</li>
+                    <li><code>&lt;tfoot&gt;</code>: Agrupa el contenido del pie de la tabla.</li>
+                    <li><code>&lt;tr&gt;</code>: Define una fila de la tabla (Table Row).</li>
+                    <li><code>&lt;th&gt;</code>: Define una celda de encabezado (Table Header Cell).</li>
+                    <li><code>&lt;td&gt;</code>: Define una celda de datos (Table Data Cell).</li>
+                    <li><code>&lt;caption&gt;</code>: Proporciona un título para la tabla.</li>
+                    <li><code>colspan</code>: Atributo para que una celda ocupe varias columnas.</li>
+                    <li><code>rowspan</code>: Atributo para que una celda ocupe varias filas.</li>
+                </ul>
+                <pre><code>
+&lt;table&gt;
+    &lt;caption&gt;Ejemplo de Tabla de Productos&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Producto&lt;/th&gt;
+            &lt;th&gt;Precio&lt;/th&gt;
+            &lt;th&gt;Stock&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Laptop&lt;/td&gt;
+            &lt;td&gt;$1200&lt;/td&gt;
+            &lt;td&gt;15&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Teclado&lt;/td&gt;
+            &lt;td&gt;$75&lt;/td&gt;
+            &lt;td&gt;50&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td colspan="3"&gt;Datos actualizados al mes.&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+                </code></pre>
+            </section>
+
+            <section>
+                <h3>Diseño de Formularios HTML</h3>
+                <p>Los formularios permiten a los usuarios interactuar con tu sitio web, enviar datos e información. El elemento principal es `&lt;form&gt;`.</p>
+                <ul>
+                    <li><code>&lt;form action="procesar.php" method="POST"&gt;</code>: El contenedor del formulario.
+                        <ul>
+                            <li><strong>`action` (acción):</strong> La URL a la que se envían los datos del formulario.</li>
+                            <li><strong>`method` (método):</strong> El método HTTP para enviar los datos (`GET` o `POST`). `POST` es preferible para datos sensibles o grandes.</li>
+                        </ul>
+                    </li>
+                    <li><code>&lt;label for="id-input"&gt;</code>: Una etiqueta descriptiva para un control de formulario. El atributo `for` debe coincidir con el `id` del control.</li>
+                    <li><code>&lt;input type="text" id="nombre" name="nombre" placeholder="Tu nombre"&gt;</code>: El elemento de entrada de datos más versátil.
+                        <ul>
+                            <li><strong>`type` (tipo):</strong> Define el tipo de control (text, password, email, number, checkbox, radio, submit, etc.).</li>
+                            <li><strong>`id` (identificador):</strong> Un identificador único para el elemento (usado con `&lt;label&gt;`).</li>
+                            <li><strong>`name` (nombre):</strong> El nombre que se usará para identificar los datos enviados al servidor.</li>
+                            <li><strong>`placeholder` (marcador de posición):</strong> Texto de ejemplo dentro del campo.</li>
+                            <li><strong>`required` (requerido):</strong> Hace que el campo sea obligatorio.</li>
+                        </ul>
+                    </li>
+                    <li><code>&lt;textarea name="comentarios" rows="4" cols="50"&gt;&lt;/textarea&gt;</code>: Un área de texto multi-línea.</li>
+                    <li><code>&lt;select name="opcion"&gt;</code> y <code>&lt;option&gt;</code>: Para listas desplegables.</li>
+                    <li><code>&lt;button type="submit"&gt;Enviar&lt;/button&gt;</code>: Un botón para enviar el formulario.</li>
+                    <li><code>&lt;fieldset&gt;</code> y <code>&lt;legend&gt;</code>: Agrupan lógicamente controles de formulario y proporcionan un título para el grupo.</li>
+                </ul>
+                <pre><code>
+&lt;form action="/submit-form" method="POST"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Información Personal&lt;/legend&gt;
+        &lt;p&gt;
+            &lt;label for="nombre-usuario"&gt;Nombre:&lt;/label&gt;
+            &lt;input type="text" id="nombre-usuario" name="nombreUsuario" required&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for="email-usuario"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email-usuario" name="emailUsuario" placeholder="ejemplo@dominio.com"&gt;
+        &lt;/p&gt;
+    &lt;/fieldset&gt;
+
+    &lt;p&gt;
+        &lt;label for="mensaje-usuario"&gt;Mensaje:&lt;/label&gt;&lt;br&gt;
+        &lt;textarea id="mensaje-usuario" name="mensajeUsuario" rows="5" cols="40"&gt;&lt;/textarea&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+        &lt;label for="pais"&gt;País:&lt;/label&gt;
+        &lt;select id="pais" name="pais"&gt;
+            &lt;option value="es"&gt;España&lt;/option&gt;
+            &lt;option value="mx"&gt;México&lt;/option&gt;
+            &lt;option value="co"&gt;Colombia&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/p&gt;
+
+    &lt;button type="submit"&gt;Enviar Formulario&lt;/button&gt;
+&lt;/form&gt;
+                </code></pre>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fundamentos del Desarrollo Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

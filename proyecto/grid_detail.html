@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de CSS Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fundamentos del Desarrollo Web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="grid_flex_responsive.html">Grid, Flexbox & Responsive</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>CSS Grid Layout: Diseño Bidimensional</h2>
+            <p><strong>CSS Grid Layout</strong> es un sistema de diseño bidimensional para la web. Te permite diseñar interfaces de usuario complejas y robustas controlando tanto las columnas como las filas de una vez. Es ideal para el diseño de la estructura general de una página o secciones principales.</p>
+
+            <section>
+                <h3>Conceptos Clave de CSS Grid</h3>
+                <ul>
+                    <li><strong>Contenedor Grid (Grid Container):</strong> El elemento padre al que le aplicas `display: grid;` o `display: inline-grid;`.</li>
+                    <li><strong>Ítems Grid (Grid Items):</strong> Los hijos directos del contenedor grid.</li>
+                    <li><strong>Líneas Grid (Grid Lines):</strong> Las líneas horizontales y verticales que forman la estructura de la cuadrícula.</li>
+                    <li><strong>Pistas Grid (Grid Tracks):</strong> Los espacios entre las líneas grid, es decir, las columnas y filas.</li>
+                    <li><strong>Celdas Grid (Grid Cells):</strong> La intersección de una fila y una columna, similar a una celda de tabla.</li>
+                    <li><strong>Áreas Grid (Grid Areas):</strong> Un área rectangular definida por la unión de varias celdas grid.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Propiedades del Contenedor Grid</h3>
+                <ul>
+                    <li><code>display: grid;</code> o <code>display: inline-grid;</code>: Habilita el contexto grid.</li>
+                    <li><code>grid-template-columns: &lt;track-list&gt;;</code>: Define las columnas de la cuadrícula.</li>
+                    <li><code>grid-template-rows: &lt;track-list&gt;;</code>: Define las filas de la cuadrícula.</li>
+                    <li><code>grid-template-areas: &lt;string&gt;+;</code>: Define las áreas de la cuadrícula usando nombres.</li>
+                    <li><code>gap: &lt;gap-value&gt;;</code> (o `grid-gap` obsoleto): Espacio entre las celdas grid (filas y columnas). También `row-gap` y `column-gap`.</li>
+                    <li><code>justify-items: start | end | center | stretch;</code>: Alinea el contenido dentro de las celdas a lo largo del eje de la fila.</li>
+                    <li><code>align-items: start | end | center | stretch;</code>: Alinea el contenido dentro de las celdas a lo largo del eje de la columna.</li>
+                    <li><code>justify-content: start | end | center | space-between | space-around | space-evenly;</code>: Alinea la cuadrícula entera a lo largo del eje de la fila dentro del contenedor grid.</li>
+                    <li><code>align-content: start | end | center | space-between | space-around | space-evenly;</code>: Alinea la cuadrícula entera a lo largo del eje de la columna dentro del contenedor grid.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Propiedades de los Ítems Grid</h3>
+                <ul>
+                    <li><code>grid-column-start: &lt;line&gt;;</code> / <code>grid-column-end: &lt;line&gt;;</code>: Dónde comienza/termina el ítem en las columnas.</li>
+                    <li><code>grid-row-start: &lt;line&gt;;</code> / <code>grid-row-end: &lt;line&gt;;</code>: Dónde comienza/termina el ítem en las filas.</li>
+                    <li><code>grid-column: &lt;start&gt; / &lt;end&gt;;</code>: Atajo para las propiedades de columna.</li>
+                    <li><code>grid-row: &lt;start&gt; / &lt;end&gt;;</code>: Atajo para las propiedades de fila.</li>
+                    <li><code>grid-area: &lt;name&gt; | &lt;row-start&gt; / &lt;column-start&gt; / &lt;row-end&gt; / &lt;column-end&gt;;</code>: Define el área de un ítem, o lo asigna a un área con nombre.</li>
+                    <li><code>justify-self: start | end | center | stretch;</code>: Alinea un ítem individual a lo largo del eje de la fila.</li>
+                    <li><code>align-self: start | end | center | stretch;</code>: Alinea un ítem individual a lo largo del eje de la columna.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Ejemplo Práctico de CSS Grid</h3>
+                <p>Layout de 2 columnas y 2 filas con áreas nombradas:</p>
+                <div class="grid-example">
+                    <div class="grid-ex-item header">Header</div>
+                    <div class="grid-ex-item sidebar">Sidebar</div>
+                    <div class="grid-ex-item content">Content</div>
+                    <div class="grid-ex-item footer">Footer</div>
+                </div>
+                <pre><code>
+.grid-example {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* 1 columna pequeña, 1 grande */
+    grid-template-rows: auto 1fr auto; /* Header, Contenido, Footer */
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+    gap: 10px;
+    height: 300px;
+    background-color: #f8f8ff;
+    border: 1px solid #e0e0f0;
+}
+.header { grid-area: header; background-color: #4682b4; color: white; } /* Azul acero */
+.sidebar { grid-area: sidebar; background-color: #6a5acd; color: white; } /* Púrpura oscuro */
+.content { grid-area: content; background-color: #87ceeb; color: #333; } /* Azul cielo */
+.footer { grid-area: footer; background-color: #4682b4; color: white; }
+.grid-ex-item {
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+                </code></pre>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fundamentos del Desarrollo Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

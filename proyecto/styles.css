@@ -1,0 +1,400 @@
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente un poco más moderna */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Fondo más claro */
+    color: #343a40; /* Texto oscuro */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #212529; /* Color oscuro */
+    color: #fff;
+    padding: 1.2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navegación */
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex; /* Usa flexbox para la navegación */
+    justify-content: center;
+    gap: 25px; /* Más espacio entre enlaces */
+    margin-top: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #007bff; /* Azul primario */
+    transform: translateY(-2px);
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 25px auto; /* Más margen superior/inferior */
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08); /* Sombra más suave */
+    border-radius: 10px;
+}
+
+main article {
+    margin-bottom: 40px;
+}
+
+main section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #e9f7ff; /* Fondo más claro para secciones */
+    border-left: 6px solid #007bff; /* Borde más pronunciado */
+    border-radius: 8px;
+}
+
+main h2 {
+    color: #007bff;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+}
+
+main h3 {
+    color: #0056b3;
+    margin-top: 25px;
+    font-size: 1.6rem;
+}
+
+main p, main ul, main ol {
+    margin-bottom: 18px;
+    font-size: 1.05em;
+}
+
+/* Estilos para listas */
+main ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+main ol {
+    list-style: decimal;
+    margin-left: 20px;
+}
+
+/* Destacado en index.html y grid_flex_responsive.html */
+.destacado {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px; /* Más espacio */
+    margin-top: 35px;
+    padding: 25px;
+    background-color: #f2f4f6; /* Fondo ligeramente diferente */
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.07);
+}
+
+.destacado article {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destacado article:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.destacado h3 a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.destacado h3 a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+
+/* Código de ejemplo */
+pre {
+    background-color: #282c34; /* Fondo oscuro para código */
+    color: #abb2bf; /* Color de texto suave */
+    padding: 20px;
+    border-left: 5px solid #61afef; /* Borde azul */
+    overflow-x: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 0.95em;
+}
+
+code {
+    font-family: 'Fira Code', 'Roboto Mono', monospace; /* Fuente de código moderna */
+    color: #e06c75; /* Color rojo para destacar */
+    background-color: #3b4048; /* Fondo más oscuro para `code` inline */
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+pre code {
+    color: inherit; /* Hereda el color del pre */
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Flexbox Example (Nueva) */
+.flex-example {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e0f2f7;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    min-height: 150px; /* Altura mínima para visualizar alineación */
+    flex-wrap: wrap;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
+}
+
+.flex-ex-item {
+    background-color: #6a5acd; /* Púrpura oscuro */
+    color: white;
+    padding: 20px;
+    margin: 10px; /* Más margen para separación */
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    flex-basis: 150px;
+    flex-grow: 1; /* Permite que crezcan */
+    flex-shrink: 1; /* Permite que encojan */
+}
+
+/* Grid Example (Nueva) */
+.grid-example {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* 1 columna pequeña, 1 grande */
+    grid-template-rows: auto 1fr auto; /* Header, Contenido, Footer */
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+    gap: 15px; /* Más espacio */
+    background-color: #e0f7e0;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+    min-height: 350px; /* Altura mínima para visualizar layout */
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
+}
+
+.grid-ex-item {
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: flex; /* Para centrar contenido vertical y horizontalmente */
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-ex-item.header {
+    grid-area: header;
+    background-color: #4682b4; /* Azul acero */
+    color: white;
+}
+.grid-ex-item.sidebar {
+    grid-area: sidebar;
+    background-color: #6a5acd; /* Púrpura oscuro */
+    color: white;
+}
+.grid-ex-item.content {
+    grid-area: content;
+    background-color: #87ceeb; /* Azul cielo */
+    color: #333;
+}
+.grid-ex-item.footer {
+    grid-area: footer;
+    background-color: #4682b4;
+    color: white;
+}
+
+/* Responsive Demo Box (Nueva) */
+.responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
+}
+
+.responsive-box {
+    background-color: #ff7f50; /* Color coral */
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+    min-width: 200px; /* Asegura un tamaño mínimo */
+}
+
+
+/* Footer */
+footer {
+    background: #212529;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+/* Responsive Web Design con Media Queries */
+
+/* Para pantallas más pequeñas (tablets) */
+@media screen and (max-width: 992px) { /* Un breakpoint más para tablets */
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    main {
+        padding: 18px;
+        margin: 20px auto;
+    }
+
+    main h2 {
+        font-size: 1.8rem;
+    }
+
+    main h3 {
+        font-size: 1.4rem;
+    }
+
+    .destacado {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .flex-example {
+        flex-direction: column; /* Se apila en pantallas más pequeñas */
+        align-items: stretch;
+    }
+
+    .flex-ex-item {
+        margin: 8px 0;
+        width: 100%; /* Ocupa el ancho completo */
+    }
+
+    .grid-example {
+        grid-template-columns: 1fr; /* Una sola columna para el grid en tablets */
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "content"
+            "footer";
+        min-height: auto; /* Ajusta la altura */
+    }
+
+    .responsive-box {
+        flex: 1 1 45%; /* Dos cajas por fila en tablets */
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media screen and (max-width: 600px) { /* Breakpoint para móviles */
+    body {
+        font-size: 0.95em;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Apila la navegación en vertical */
+        gap: 8px;
+        margin-top: 15px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        width: calc(100% - 20px); /* Ajusta el ancho para el padding */
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    main {
+        padding: 15px;
+        margin: 15px auto;
+        border-radius: 5px;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+
+    main h3 {
+        font-size: 1.2rem;
+    }
+
+    main section {
+        padding: 15px;
+    }
+
+    .destacado {
+        grid-template-columns: 1fr; /* Una sola columna para los artículos destacados */
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .destacado article {
+        padding: 20px;
+    }
+
+    .responsive-box {
+        flex: 1 1 90%; /* Una caja por fila en móviles */
+        padding: 25px;
+    }
+
+    pre {
+        padding: 15px;
+    }
+}

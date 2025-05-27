@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Responsive Web Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fundamentos del Desarrollo Web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="grid_flex_responsive.html">Grid, Flexbox & Responsive</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Responsive Web Design: Adaptabilidad para Todos los Dispositivos</h2>
+            <p><strong>Responsive Web Design (RWD)</strong> es una filosofía de diseño y desarrollo web que busca crear sitios que se adapten automáticamente al tamaño de la pantalla y orientación de cualquier dispositivo, desde teléfonos inteligentes hasta monitores de escritorio grandes. El objetivo es proporcionar una experiencia de usuario óptima sin importar el dispositivo.</p>
+
+            <section>
+                <h3>Principios Clave del Responsive Web Design</h3>
+                <ul>
+                    <li><strong>Grid Fluido:</strong> Utiliza unidades relativas (porcentajes, `em`, `rem`, `vw`, `vh`, `fr`) en lugar de unidades fijas (píxeles) para la anchura de los elementos. Esto permite que el diseño se "estire" o "encoja" fluidamente.</li>
+                    <li><strong>Imágenes Flexibles:</strong> Las imágenes deben escalar dentro de sus contenedores. La propiedad `max-width: 100%; height: auto;` es comúnmente usada para esto.</li>
+                    <li><strong>Media Queries:</strong> Son la herramienta principal para aplicar estilos CSS condicionalmente basados en las características del dispositivo (ancho de la pantalla, altura, orientación, resolución, etc.).</li>
+                    <li><strong>Mobile First:</strong> Una estrategia de desarrollo que consiste en diseñar y codificar primero para las pantallas más pequeñas (móviles) y luego añadir estilos para pantallas más grandes. Esto asegura que el contenido más importante sea accesible en todos los dispositivos y puede mejorar el rendimiento en móviles.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Media Queries en Detalle</h3>
+                <p>Una Media Query consiste en un tipo de medio (ej. `screen`) y una o más expresiones de características de medios (ej. `max-width`, `min-width`). Si la condición es verdadera, los estilos dentro de la Media Query se aplican.</p>
+                <pre><code>
+/* Estilos por defecto (mobile first) */
+body {
+    background-color: lightgray;
+    font-size: 16px;
+}
+
+/* Media Query para tabletas (desde 768px de ancho) */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: lightblue;
+        font-size: 18px;
+    }
+    .responsive-box {
+        width: 48%; /* Dos columnas */
+    }
+}
+
+/* Media Query para escritorios (desde 1024px de ancho) */
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: lightgreen;
+        font-size: 20px;
+    }
+    .responsive-box {
+        width: 30%; /* Tres columnas */
+    }
+}
+                </code></pre>
+                <ul>
+                    <li><code>min-width:</code>: Aplica estilos cuando la pantalla es <strong>igual o mayor</strong> que el valor especificado. Ideal para un enfoque "Mobile First".</li>
+                    <li><code>max-width:</code>: Aplica estilos cuando la pantalla es <strong>igual o menor</strong> que el valor especificado. Útil para un enfoque "Desktop First".</li>
+                    <li>Otras características: `orientation`, `resolution`, `height`, etc.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>La Importancia de la Meta Etiqueta Viewport</h3>
+                <p>Para que el navegador sepa cómo escalar tu contenido en dispositivos móviles, es crucial incluir la siguiente meta etiqueta en el `&lt;head&gt;` de tu HTML:</p>
+                <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+                <ul>
+                    <li><code>width=device-width</code>: Establece el ancho del viewport al ancho del dispositivo.</li>
+                    <li><code>initial-scale=1.0</code>: Establece el nivel de zoom inicial cuando la página se carga por primera vez.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Ejemplo Demostrativo de Responsividad</h3>
+                <p>El color de fondo y el tamaño de la fuente de esta página cambiarán al redimensionar tu navegador.</p>
+                <div class="responsive-container">
+                    <div class="responsive-box">Caja 1</div>
+                    <div class="responsive-box">Caja 2</div>
+                    <div class="responsive-box">Caja 3</div>
+                    <div class="responsive-box">Caja 4</div>
+                </div>
+                <p>Observa cómo las cajas se reorganizan al cambiar el ancho de la pantalla, demostrando el uso combinado de Flexbox y Media Queries.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fundamentos del Desarrollo Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
